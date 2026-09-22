@@ -18,6 +18,7 @@ This document provides guidelines and context for autonomous AI agents (like `go
 - **Document**: If a design choice is made (e.g., choosing a specific VNC server), create an ADR.
 - **Commit**: Use descriptive commit messages.
 
+- **Directory Structure**: Refer to the [Directory Structure](#directory-structure) section in the README for an overview of the repository layout.
 ## Technical Context
 - **Base OS**: Ubuntu (via ROS 2 Humble image).
 - **Middleware**: ROS 2 Humble.

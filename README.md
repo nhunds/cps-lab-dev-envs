@@ -10,6 +10,26 @@ The primary objective is to provide a standardized, highly compatible developmen
 - **Devcontainer Features**: Modular extensions built on top of the base image to support specific development platforms (e.g., Niryo Ned 2).
 - **Distribution**: Both the base image and the features are published to the **GitHub Container Registry (GHCR)**.
 
+## Directory Structure
+```
+.
+├── images/
+│   └── ros2/
+│       ├── Dockerfile
+│       └── ...
+├── devcontainer-features/
+│   ├── niryo-ned-2/
+│   │   ├── feature.json
+│   │   └── ...
+│   └── niryo-studio/
+│       ├── feature.json
+│       └── ...
+├── docs/
+│   └── adrs/
+│       └── ...
+└── README.md
+```
+
 ## Architecture
 - **Base Stack**: Ubuntu $\rightarrow$ ROS 2 Humble $\rightarrow$ VNC Server $\rightarrow$ noVNC.
 - **Modularization**: Use of Devcontainer Features allows platform-specific dependencies to be added without bloating the base image.
